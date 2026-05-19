@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         cream: '#F5EFE6',
-        walnut: '#6F4E37',
+        walnut: '#F28E25',
         gold: '#C9A66B',
         charcoal: '#1F1B16',
         surface: '#FFFFFF',
