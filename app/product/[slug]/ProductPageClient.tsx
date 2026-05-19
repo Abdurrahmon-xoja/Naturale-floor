@@ -25,7 +25,7 @@ export default function ProductPageClient({ product }: Props) {
   return (
     <>
       {/* Sticky header */}
-      <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-gold/15">
+      <header className="site-header sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-gold/15">
         <div className="max-w-7xl mx-auto px-5 h-16 flex items-center gap-4">
           <Link
             href="/"
