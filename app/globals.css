@@ -12,17 +12,40 @@
 }
 
 /* ── Base ─────────────────────────────── */
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  /* Prevent hash links scrolling under sticky header + notch */
+  scroll-padding-top: calc(64px + env(safe-area-inset-top, 0px));
+}
 
 body {
+  /* Matches header bg — fills the notch area above sticky header */
   background-color: var(--cream);
   color: var(--charcoal);
   -webkit-font-smoothing: antialiased;
 }
 
-/* Safe-area support (iPhone notch / Dynamic Island) */
+/* ── Safe-area (iPhone notch / Dynamic Island) ── */
+/*
+  The correct fix:
+  1. viewport-fit=cover in layout.tsx Viewport export
+  2. padding-top: env(safe-area-inset-top) on the <header>
+  3. body background matches header → notch area shows same color
+  4. backdrop-blur moved to ::before to avoid iOS Safari sticky+blur bug
+*/
 .safe-top {
-  top: env(safe-area-inset-top);
+  top: env(safe-area-inset-top, 0px);
+}
+
+/* Header blur layer — separated from sticky positioning to fix Safari bug */
+.header-blur::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  background-color: rgba(245, 239, 230, 0.92);
+  z-index: -1;
 }
 
 /* Grain texture overlay on body */
