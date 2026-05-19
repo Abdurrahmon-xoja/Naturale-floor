@@ -7,7 +7,7 @@ export default function HomeClient() {
   const { t } = useT();
 
   return (
-    <section className="relative overflow-hidden bg-charcoal text-cream min-h-[92vh] flex flex-col justify-end">
+    <section className="relative overflow-hidden bg-charcoal text-cream min-h-[92vh] flex flex-col justify-center">
       {/* Layered wood-grain lines */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
         <div
@@ -31,7 +31,7 @@ export default function HomeClient() {
       {/* Gold accent bar */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-60" />
 
-      <div className="relative max-w-7xl mx-auto px-5 pb-12 pt-20 w-full">
+      <div className="relative max-w-7xl mx-auto px-5 py-16 w-full">
         {/* Eyebrow */}
         <p className="text-gold/80 text-[10px] tracking-[0.3em] uppercase font-semibold mb-5">
           Tashkent · Showroom · Est. 2020
