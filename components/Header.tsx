@@ -9,7 +9,7 @@ export default function Header() {
   const { t } = useT();
 
   return (
-    <header className="site-header sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-gold/15">
+    <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-gold/15" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
       <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image

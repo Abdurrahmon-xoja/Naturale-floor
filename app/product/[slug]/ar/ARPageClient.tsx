@@ -24,7 +24,7 @@ export default function ARPageClient({ product }: Props) {
   if (product.arUrl) {
     return (
       <div className="fixed inset-0 bg-charcoal flex flex-col items-center justify-center gap-4">
-        <div className="absolute top-4 left-4">
+        <div className="safe-top absolute left-4 z-20" style={{ marginTop: '1rem' }}>
           <Link
             href={`/product/${product.slug}`}
             className="flex items-center gap-2 bg-black/50 backdrop-blur text-cream px-4 py-2 rounded-full text-sm font-semibold min-h-[44px]"

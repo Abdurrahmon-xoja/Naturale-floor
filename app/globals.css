@@ -21,10 +21,6 @@ body {
 }
 
 /* Safe-area support (iPhone notch / Dynamic Island) */
-header.site-header {
-  padding-top: env(safe-area-inset-top);
-}
-
 .safe-top {
   top: env(safe-area-inset-top);
 }
