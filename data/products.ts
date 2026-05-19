@@ -15,6 +15,7 @@ export type Product = {
   images: string[];
   modelGlb?: string;
   modelUsdz?: string;
+  arUrl?: string;
   tourUrl?: string;
   description: Record<Locale, string>;
   relatedSlugs?: string[];
@@ -47,7 +48,8 @@ export const products: Product[] = [
     ],
     modelGlb: '/models/oak-natural-brushed.glb',
     modelUsdz: '/models/oak-natural-brushed.usdz',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: 'Классика европейского паркетного производства — массивная доска из немецкого дуба с брашированной поверхностью. Текстура дерева максимально подчёркнута: мелкие поры раскрыты, годичные кольца чётко читаются.\n\nМасло-восковое покрытие питает древесину изнутри, сохраняя живой тёплый тон. Доска легко поддаётся реставрации на месте без демонтажа.\n\nИдеально для гостиных и спален в стиле скандинавский минимализм, классика или эко-интерьер.',
       uz: 'Nemis emandan tayyorlangan, cho\'tkali yuzaga ega klassik evropa parket taxtalari. Yog\'-mum qoplaması yog\'ochni ichdan to\'yintiradi, jonli iliq rangni saqlaydi.\n\nSkandinaviya minimalizmi, klassika yoki eko-interior uchun ideal.',
@@ -80,7 +82,8 @@ export const products: Product[] = [
       '/images/products/american-walnut-2.jpg',
     ],
     modelGlb: '/models/placeholder.glb',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: 'Американский чёрный орех — один из самых роскошных паркетных материалов. Тёмный шоколадный тон с выраженными прожилками создаёт атмосферу состоятельности и тепла.\n\nГрад «Селект» означает минимум сучков и равномерный цвет, что особенно ценится в парадных гостиных и кабинетах.\n\nПокрытие УФ-маслом подчёркивает природную красоту без искусственного блеска.',
       uz: 'Amerika qora yong\'og\'i — parket materiallari orasidagi eng hashamatlilaridan biri. To\'q shokoladli ton va belirgin tomirlar issiqlik va farovonlik muhitini yaratadi.',
@@ -113,7 +116,8 @@ export const products: Product[] = [
       '/images/products/ash-white-2.jpg',
     ],
     modelGlb: '/models/placeholder.glb',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: 'Белёный ясень придаёт помещению воздушность и свет. Выраженная структура волокна, характерная для ясеня, прекрасно читается даже после обработки пигментом.\n\nИнженерная конструкция обеспечивает стабильность размеров при перепадах влажности — незаменима для полов с подогревом (тёплый пол).\n\nОтличный выбор для современных скандинавских и японо-минималистических интерьеров.',
       uz: 'Oqartirilgan kul daraxti xonaga yorug\'lik va hafiflik beradi. Muhandislik konstruktsiyasi namlik o\'zgarishlarida o\'lchamlarning barqarorligini ta\'minlaydi — isitish tizimlari bilan foydalanish uchun ideal.',
@@ -146,7 +150,8 @@ export const products: Product[] = [
       '/images/products/oak-smoked-2.jpg',
     ],
     modelGlb: '/models/placeholder.glb',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: 'Термообработка аммиаком придаёт дубу насыщенный серо-коричневый тон — эффект «состаренного» дерева без потери прочности. Брашировка подчёркивает объём текстуры.\n\nДуб дымчатый органично вписывается в лофт, индустриальный и современный классический стили.\n\nИнженерный слой обеспечивает совместимость с водяным тёплым полом.',
       uz: 'Ammiak bilan issiqlik ishlovi emanga to\'q kulrang-jigarrang ton beradi — mustahkamlikni yo\'qotmasdan «qadimiy» yog\'och effekti. Zamonaviy klassik va loft interior uchun ideal.',
@@ -179,7 +184,8 @@ export const products: Product[] = [
       '/images/products/beech-steamed-2.jpg',
     ],
     modelGlb: '/models/placeholder.glb',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: 'Паровой бук — традиционный выбор для детских, спален и кухонных зон. Паровая обработка выравнивает цвет и устраняет внутренние напряжения в древесине, обеспечивая долгосрочную стабильность.\n\nБук обладает высокой твёрдостью по Янке, что делает его устойчивым к царапинам и вмятинам.\n\nДоступная цена при отличном европейском качестве.',
       uz: 'Bug\'latilgan qo\'ng\'iroq daraxti bolalar xonalari va oshxonalar uchun an\'anaviy tanlov. Yuqori Janka qattiqligi uni tirnalish va botiqlardan himoya qiladi.',
@@ -212,7 +218,8 @@ export const products: Product[] = [
       '/images/products/alpine-oak-laminate-2.jpg',
     ],
     modelGlb: '/models/placeholder.glb',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: '33 класс износостойкости — подходит для коммерческих помещений с высокой проходимостью. Тиснение «в тон» имитирует натуральную фактуру дерева на ощупь.\n\nВлагостойкая HDF-плита с замком AC5 обеспечивает простой плавающий монтаж без клея и гвоздей.\n\nОптимальное решение для офисов, прихожих и гостиных с большой нагрузкой.',
       uz: '33-sinf eskirishga chidamlilik — yuqori trafikli tijorat xonalari uchun mos. Namlikka chidamli HDF plita oddiy suzuvchi o\'rnatishni ta\'minlaydi. Ofislar va koridorlar uchun optimal yechim.',
@@ -241,11 +248,12 @@ export const products: Product[] = [
     originCountry: 'Китай (EU сертификат E1)',
     pricePerM2: 290_000,
     images: [
-      '/images/products/spc-stone-grey-1.jpg',
-      '/images/products/spc-stone-grey-2.jpg',
+      '/images/products/spc-stone-grey-1.png',
+      '/images/products/spc-stone-grey-2.png',
     ],
     modelGlb: '/models/placeholder.glb',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: 'SPC — абсолютно водостойкое покрытие на минеральной основе. Идеально для ванных, кухонь и любых помещений с высокой влажностью.\n\nОснование из камне-пластикового композита не деформируется при намокании и перепадах температур. Встроенная подложка снижает шум шагов.\n\nСертификат E1 — безопасен для жилых помещений и детских комнат.',
       uz: 'SPC — mineral asosidagi mutlaq suv o\'tkazmaydigan qoplama. Vannaxona, oshxona va yuqori namlikli xonalar uchun ideal. E1 sertifikati — turar-joy va bolalar xonalari uchun xavfsiz.',
@@ -278,7 +286,8 @@ export const products: Product[] = [
       '/images/products/cherry-european-2.jpg',
     ],
     modelGlb: '/models/placeholder.glb',
-    tourUrl: '/tours/showroom.jpg',
+    arUrl: 'https://web.arkon.uz/brands/product/891',
+    tourUrl: 'https://platform360.uz/ru/locations/natural-floorVoC?utm_source=ig&utm_medium=social&utm_content=link_in_bio',
     description: {
       ru: 'Европейская вишня — редкая и изысканная порода для тех, кто ценит уникальность. Молодая древесина имеет нежно-розовый тон, который со временем приобретает тёплый янтарный оттенок.\n\nЭтот природный процесс патинирования превращает пол в живой объект, неповторимый в каждом помещении.\n\nРекомендована для парадных спален, кабинетов и коллекционных интерьеров.',
       uz: 'Evropa gilosi — noyob va nafis tur. Yosh yog\'och asta-sekin iliq qahrabo rangini oladi — har bir xonada taqqoslanmas yashovchi ob\'ektga aylanadi. Namoyishkor yotoq xonalari va kabinetlar uchun tavsiya etiladi.',

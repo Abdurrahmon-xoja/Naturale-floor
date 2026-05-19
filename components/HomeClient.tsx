@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useT } from '@/lib/i18n';
 
 export default function HomeClient() {
@@ -26,12 +27,17 @@ export default function HomeClient() {
       />
 
       <div className="relative max-w-6xl mx-auto px-4 py-20">
-        <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-4">
+        <p className="text-gold text-sm font-semibold tracking-widest uppercase mb-6">
           Tashkent Showroom
         </p>
-        <h1 className="font-display text-5xl md:text-7xl font-bold leading-[1.05] mb-6">
-          Natural<br />Floor UZ
-        </h1>
+        <Image
+          src="/logo.png"
+          alt="Natural Floor UZ"
+          width={320}
+          height={100}
+          className="h-20 w-auto object-contain mb-6 brightness-0 invert"
+          priority
+        />
         <p className="text-cream/70 text-lg md:text-xl max-w-xl mb-8">
           {t('hero.tagline')}
         </p>
