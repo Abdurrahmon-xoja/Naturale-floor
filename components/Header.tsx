@@ -9,23 +9,35 @@ export default function Header() {
   const { t } = useT();
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-gold/20">
-      <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-cream/90 backdrop-blur-md border-b border-gold/15">
+      <div className="max-w-7xl mx-auto px-5 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center">
           <Image
             src="/logo.png"
             alt="Natural Floor UZ"
-            width={140}
-            height={44}
+            width={148}
+            height={46}
             className="h-9 w-auto object-contain"
             priority
           />
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-sm text-charcoal/80">
-          <a href="/#catalog" className="hover:text-walnut transition-colors">{t('nav.catalog')}</a>
-          <a href="/#about" className="hover:text-walnut transition-colors">{t('nav.about')}</a>
-          <a href="/#footer" className="hover:text-walnut transition-colors">{t('nav.contact')}</a>
+
+        <nav className="hidden md:flex items-center gap-8">
+          {[
+            { href: '/#catalog', label: t('nav.catalog') },
+            { href: '/#about',   label: t('nav.about') },
+            { href: '/#footer',  label: t('nav.contact') },
+          ].map(({ href, label }) => (
+            <a
+              key={href}
+              href={href}
+              className="text-xs tracking-[0.12em] uppercase font-semibold text-charcoal/50 hover:text-walnut transition-colors duration-200"
+            >
+              {label}
+            </a>
+          ))}
         </nav>
+
         <LanguageSwitcher />
       </div>
     </header>
