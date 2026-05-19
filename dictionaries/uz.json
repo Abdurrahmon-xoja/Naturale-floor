@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "catalog": "Katalog",
+    "about": "Biz haqimizda",
+    "contact": "Bog'lanish"
+  },
+  "hero": {
+    "tagline": "Toshkentda Evropa parketi va muhandislik taxtasi",
+    "cta": "Katalogni ko'rish"
+  },
+  "catalog": {
+    "title": "Katalog",
+    "filter_all": "Barchasi",
+    "filter_parquet": "Massiv",
+    "filter_engineered": "Muhandislik",
+    "filter_laminate": "Laminat",
+    "filter_spc": "SPC"
+  },
+  "product": {
+    "try_ar": "AR da sinab ko'ring",
+    "tour_360": "360° Tur",
+    "ar_soon": "AR modeli tez kunda",
+    "tour_soon": "Tur tez kunda",
+    "price_per_m2": "/ m²",
+    "specs": "Xususiyatlar",
+    "material": "Material",
+    "thickness": "Qalinlik",
+    "plank_size": "Taxta o'lchami",
+    "color": "Rang",
+    "surface": "Yuzasi",
+    "origin": "Ishlab chiqarish",
+    "price": "Narx",
+    "description": "Tavsif",
+    "related": "O'xshash mahsulotlar",
+    "contact_manager": "Menejer bilan bog'lanish",
+    "whatsapp_message": "Salom! {name} mahsuloti meni qiziqtiradi. Mavjudligi va shartlari haqida ma'lumot bering."
+  },
+  "ar": {
+    "title": "AR sinov",
+    "launch": "AR da ochish",
+    "preparing": "AR modeli tayyorlanmoqda",
+    "preparing_desc": "Biz ushbu qoplama uchun 3D model ustida ishlayapmiz. Tez orada mavjud bo'ladi!",
+    "back": "Orqaga"
+  },
+  "tour": {
+    "title": "360° Tur",
+    "back": "Orqaga",
+    "drag": "Ko'rish uchun torting"
+  },
+  "about": {
+    "title": "Natural Floor UZ haqida",
+    "text": "Biz parket, muhandislik taxtasi va laminatni to'g'ridan-to'g'ri Evropa va Osiyo ishlab chiqaruvchilaridan olib kelamiz. Toshkentdagi showroomimizda 50 dan ortiq namuna mavjud."
+  },
+  "footer": {
+    "address": "Toshkent, Parket ko'chasi, 12",
+    "phone": "+998 90 000-00-00",
+    "rights": "© 2025 Natural Floor UZ. Barcha huquqlar himoyalangan."
+  },
+  "currency": "so'm",
+  "lang": "Til"
+}

@@ -6,21 +6,31 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "qr": "tsx scripts/generate-qr.ts",
+    "placeholders": "tsx scripts/generate-placeholders.ts"
   },
   "dependencies": {
+    "@google/model-viewer": "^4.2.0",
+    "canvas": "^3.2.3",
+    "next": "14.2.35",
+    "pannellum": "^2.5.7",
+    "pdfkit": "^0.18.0",
+    "qrcode": "^1.5.4",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.35"
+    "tsx": "^4.22.2"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
+    "@types/pdfkit": "^0.17.6",
+    "@types/qrcode": "^1.5.6",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.35",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.35"
+    "typescript": "^5"
   }
 }

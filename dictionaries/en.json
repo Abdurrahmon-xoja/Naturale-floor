@@ -1,0 +1,61 @@
+{
+  "nav": {
+    "catalog": "Catalog",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "European parquet & engineered flooring in Tashkent",
+    "cta": "Browse catalog"
+  },
+  "catalog": {
+    "title": "Catalog",
+    "filter_all": "All",
+    "filter_parquet": "Solid",
+    "filter_engineered": "Engineered",
+    "filter_laminate": "Laminate",
+    "filter_spc": "SPC"
+  },
+  "product": {
+    "try_ar": "Try in AR",
+    "tour_360": "360° Tour",
+    "ar_soon": "AR model coming soon",
+    "tour_soon": "Tour coming soon",
+    "price_per_m2": "/ m²",
+    "specs": "Specifications",
+    "material": "Material",
+    "thickness": "Thickness",
+    "plank_size": "Plank size",
+    "color": "Colour",
+    "surface": "Surface",
+    "origin": "Origin",
+    "price": "Price",
+    "description": "Description",
+    "related": "Related products",
+    "contact_manager": "Contact manager",
+    "whatsapp_message": "Hello! I am interested in {name}. Please let me know about availability and pricing."
+  },
+  "ar": {
+    "title": "AR Preview",
+    "launch": "Open in AR",
+    "preparing": "AR model in preparation",
+    "preparing_desc": "We are working on the 3D model for this flooring. Coming soon!",
+    "back": "Back"
+  },
+  "tour": {
+    "title": "360° Tour",
+    "back": "Back",
+    "drag": "Drag to explore"
+  },
+  "about": {
+    "title": "About Natural Floor UZ",
+    "text": "We source parquet, engineered boards, and laminate directly from European and Asian manufacturers. Our Tashkent showroom has over 50 samples — come feel real wood."
+  },
+  "footer": {
+    "address": "Tashkent, Parquet St 12",
+    "phone": "+998 90 000-00-00",
+    "rights": "© 2025 Natural Floor UZ. All rights reserved."
+  },
+  "currency": "UZS",
+  "lang": "Language"
+}

@@ -1,101 +1,78 @@
-import Image from "next/image";
+import Header from '@/components/Header';
+import ProductGrid from '@/components/ProductGrid';
+import HomeClient from '@/components/HomeClient';
+import { products } from '@/data/products';
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Header />
+      <main>
+        <HomeClient />
+        <ProductGrid products={products} />
+        <AboutSection />
+        <FooterSection />
+      </main>
+    </>
+  );
+}
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+function AboutSection() {
+  return (
+    <section id="about" className="max-w-6xl mx-auto px-4 py-16 border-t border-gold/20">
+      <div className="max-w-2xl">
+        <h2 className="font-display text-3xl font-bold text-charcoal mb-4">
+          О Natural Floor UZ
+        </h2>
+        <p className="text-charcoal/80 leading-relaxed">
+          Мы привозим паркет, инженерную доску и ламинат напрямую от европейских и азиатских производителей. В нашем шоуруме в Ташкенте представлено более 50 образцов — приходите потрогать живое дерево руками.
+        </p>
+        <p className="text-charcoal/80 leading-relaxed mt-3">
+          Каждый образец в зале оснащён QR-кодом — отсканируйте его телефоном, чтобы увидеть характеристики, примерить покрытие в своей комнате через AR, или пройтись по шоуруму в режиме 360°.
+        </p>
+        <a
+          href="https://instagram.com/natural_floor.uz"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 mt-6 text-walnut font-semibold hover:text-gold transition-colors"
+        >
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+          </svg>
+          @natural_floor.uz
+        </a>
+      </div>
+    </section>
+  );
+}
+
+function FooterSection() {
+  return (
+    <footer id="footer" className="bg-charcoal text-cream/80 mt-8">
+      <div className="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+        <div>
+          <p className="font-display text-xl font-bold text-cream mb-2">Natural Floor UZ</p>
+          <p className="text-sm">Паркет и инженерная доска в Ташкенте</p>
+        </div>
+        <div>
+          <p className="font-semibold text-cream mb-2">Контакты</p>
+          <p className="text-sm">Ташкент, ул. Паркетная, 12</p>
+          <p className="text-sm mt-1">+998 90 000-00-00</p>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://instagram.com/natural_floor.uz"
             target="_blank"
             rel="noopener noreferrer"
+            className="text-sm text-gold hover:text-gold/80 mt-1 block"
           >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
+            @natural_floor.uz
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="md:text-right">
+          <p className="text-xs text-cream/40 mt-auto">
+            © 2025 Natural Floor UZ. Все права защищены.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 }
