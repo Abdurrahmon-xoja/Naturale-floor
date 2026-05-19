@@ -27,9 +27,9 @@ export default function ProductGrid({ products }: Props) {
     active === 'all' ? products : products.filter((p) => p.category === active);
 
   return (
-    <section id="catalog" className="max-w-7xl mx-auto px-5 py-20">
+    <section id="catalog" className="max-w-7xl mx-auto px-5 py-12">
       {/* Section header */}
-      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
+      <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-8">
         <div>
           <span className="gold-rule mb-4" />
           <h2 className="font-display text-4xl md:text-5xl font-bold text-charcoal">

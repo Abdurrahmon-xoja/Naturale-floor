@@ -31,9 +31,9 @@ export default function HomeClient() {
       {/* Gold accent bar */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent opacity-60" />
 
-      <div className="relative max-w-7xl mx-auto px-5 pb-20 pt-32 w-full">
+      <div className="relative max-w-7xl mx-auto px-5 pb-12 pt-20 w-full">
         {/* Eyebrow */}
-        <p className="text-gold/80 text-[10px] tracking-[0.3em] uppercase font-semibold mb-8">
+        <p className="text-gold/80 text-[10px] tracking-[0.3em] uppercase font-semibold mb-5">
           Tashkent · Showroom · Est. 2020
         </p>
 
@@ -43,12 +43,12 @@ export default function HomeClient() {
           alt="Natural Floor UZ"
           width={380}
           height={120}
-          className="h-[72px] md:h-24 w-auto object-contain brightness-0 invert mb-8"
+          className="h-[64px] md:h-20 w-auto object-contain brightness-0 invert mb-5"
           priority
         />
 
         {/* Tagline */}
-        <p className="text-cream/55 text-base md:text-lg max-w-md leading-relaxed mb-10 font-light">
+        <p className="text-cream/55 text-base md:text-lg max-w-md leading-relaxed mb-7 font-light">
           {t('hero.tagline')}
         </p>
 
@@ -70,7 +70,7 @@ export default function HomeClient() {
         </div>
 
         {/* Stats row */}
-        <div className="flex gap-10 mt-16 pt-8 border-t border-cream/10">
+        <div className="flex gap-10 mt-10 pt-6 border-t border-cream/10">
           {[
             { num: '50+', label: 'образцов в зале' },
             { num: 'AR', label: 'примерка на вашем полу' },

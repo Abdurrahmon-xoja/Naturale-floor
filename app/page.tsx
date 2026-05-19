@@ -21,7 +21,7 @@ export default function HomePage() {
 function AboutSection() {
   return (
     <section id="about" className="border-t border-gold/20">
-      <div className="max-w-7xl mx-auto px-5 py-20 md:py-28 grid md:grid-cols-2 gap-12 md:gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-5 py-14 md:py-20 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         {/* Text */}
         <div>
           <span className="block w-12 h-px bg-gold mb-6" />
@@ -81,7 +81,7 @@ function FooterSection() {
       {/* Top gold bar */}
       <div className="h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
 
-      <div className="max-w-7xl mx-auto px-5 py-14 grid grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-5 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
         {/* Brand */}
         <div className="col-span-2 md:col-span-1">
           <Image
